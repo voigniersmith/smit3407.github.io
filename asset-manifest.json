@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/smit3407.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/smit3407.github.io/static/js/main.468c93d0.chunk.js",
+    "main.js.map": "/smit3407.github.io/static/js/main.468c93d0.chunk.js.map",
+    "runtime-main.js": "/smit3407.github.io/static/js/runtime-main.cf9e58e3.js",
+    "runtime-main.js.map": "/smit3407.github.io/static/js/runtime-main.cf9e58e3.js.map",
+    "static/js/2.fa6f66bc.chunk.js": "/smit3407.github.io/static/js/2.fa6f66bc.chunk.js",
+    "static/js/2.fa6f66bc.chunk.js.map": "/smit3407.github.io/static/js/2.fa6f66bc.chunk.js.map",
+    "static/js/3.d327c29b.chunk.js": "/smit3407.github.io/static/js/3.d327c29b.chunk.js",
+    "static/js/3.d327c29b.chunk.js.map": "/smit3407.github.io/static/js/3.d327c29b.chunk.js.map",
+    "index.html": "/smit3407.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/smit3407.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.fa6f66bc.chunk.js.LICENSE.txt": "/smit3407.github.io/static/js/2.fa6f66bc.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/smit3407.github.io/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf9e58e3.js",
+    "static/js/2.fa6f66bc.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.468c93d0.chunk.js"
+  ]
+}
