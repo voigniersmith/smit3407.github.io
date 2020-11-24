@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
 
-/*import React from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -95,7 +95,7 @@ function Topics() {
       {/* The Topics page has its own <Switch> with more routes
           that build on the /topics URL path. You can think of the
           2nd <Route> here as an "index" page for all topics, or
-          the page that is shown when no topic is selected }
+          the page that is shown when no topic is selected*/}
           <Switch>
           <Route path={`${match.path}/:topicId`}>
             <Topic />
@@ -111,4 +111,4 @@ function Topics() {
   function Topic() {
     let { topicId } = useParams();
     return <h3>Requested topic ID: {topicId}</h3>;
-  }*/
+  }
