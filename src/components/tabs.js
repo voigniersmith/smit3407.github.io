@@ -9,6 +9,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { appleTabsStylesHook } from '@mui-treasury/styles/tabs';
 
 // Pages Import
 import Home from '../pages/home';
@@ -52,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
+    borderRadius: 12,
   },
 }));
 
@@ -67,11 +69,11 @@ export default function HomeTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
-          <Tab label="About" {...a11yProps(0)} />
-          <Tab label="Projects" {...a11yProps(1)} />
-          <Tab label="Resume" {...a11yProps(2)} />
-          <Tab label="Contact" {...a11yProps(3)} />        
+        <Tabs classes={appleTabsStylesHook.useTabs()} value={value} onChange={handleChange} aria-label="simple tabs example" centered>
+          <Tab classes={appleTabsStylesHook.useTabItem()} disableRipple label="About" {...a11yProps(0)} />
+          <Tab classes={appleTabsStylesHook.useTabItem()} disableRipple label="Projects" {...a11yProps(1)} />
+          <Tab classes={appleTabsStylesHook.useTabItem()} disableRipple label="Resume" {...a11yProps(2)} />
+          <Tab classes={appleTabsStylesHook.useTabItem()} disableRipple label="Contact" {...a11yProps(3)} />        
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

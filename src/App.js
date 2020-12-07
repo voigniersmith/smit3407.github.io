@@ -19,40 +19,39 @@ import me from './pictures/IMG_1440.jpg'
 import MyCard from './components/myCard';
 import Tabs from './components/tabs';
 import { Card, CardMedia, Grid, Paper } from '@material-ui/core';
+// Theme Stuff
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import themeFile from "./components/theme";
+import "./App.css";
+
+// Material UI Appbar
+import Appbar from './components/appbar';
+
+const theme = createMuiTheme(themeFile);
 
 export default function App() {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route path="/about" component={About}>
-            <About />
-          </Route>
-          <Route path="/topics" component={Topics}>
-            <Topics />
-          </Route>
-          <Route path="/home" component={Home}>
-            <Home />
-          </Route>
-          <Route path="/">
+    <MuiThemeProvider theme={theme}>
+      <Router>
+          <Switch>
+            <Route path="/">
+              <br></br>
+              <br></br>
+              <Grid container justify="center" spacing={4}>
+                <Grid item>
+                  <MyCard />
+                </Grid>
 
-          </Route>
-        </Switch>
-
-        <br></br>
-        <br></br>
-        <Grid container justify="center" spacing={4}>
-          <Grid item>
-            <MyCard />
-          </Grid>
-
-          <Grid item>
-            <Paper>
-              <Tabs/>
-            </Paper>
-          </Grid>
-        </Grid>
-      </div>
-    </Router>
+                <Grid item>
+                  <Paper>
+                    <Tabs/>
+                  </Paper>
+                </Grid>
+              </Grid>
+            </Route>
+          </Switch>
+        </Router>
+      </MuiThemeProvider>
   );
 }

@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.tab { text-indent:40px }
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
+}
