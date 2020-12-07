@@ -12,16 +12,18 @@ import {
 import Home from './pages/home';
 import About from './pages/about';
 import Topics from './pages/topics';
+import me from './pictures/IMG_1440.jpg'
 
-// Material UI Appbar
-import Appbar from './components/appbar';
+// Material UI Stuff
+// import Appbar from './components/appbar';
+import MyCard from './components/myCard';
+import Tabs from './components/tabs';
+import { Card, CardMedia, Grid, Paper } from '@material-ui/core';
 
 export default function App() {
   return (
     <Router>
       <div>
-        <Appbar />
-
         <Switch>
           <Route path="/about" component={About}>
             <About />
@@ -29,10 +31,27 @@ export default function App() {
           <Route path="/topics" component={Topics}>
             <Topics />
           </Route>
-          <Route path="/" component={Home}>
+          <Route path="/home" component={Home}>
             <Home />
           </Route>
+          <Route path="/">
+
+          </Route>
         </Switch>
+
+        <br></br>
+        <br></br>
+        <Grid container justify="center" spacing={4}>
+          <Grid item>
+            <MyCard />
+          </Grid>
+
+          <Grid item>
+            <Paper>
+              <Tabs/>
+            </Paper>
+          </Grid>
+        </Grid>
       </div>
     </Router>
   );
