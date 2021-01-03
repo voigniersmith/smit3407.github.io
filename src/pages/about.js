@@ -2,7 +2,7 @@ import { Container, Typography } from '@material-ui/core'
 
 export default function About() {
     return (
-        <Container maxWidth='sm'>
+        <Container maxWidth='xs'>
             <h2>About Me</h2>
             <Typography>
                 Uhhhhhh, I can update this later, but shortly, I am a nerdy dork.
