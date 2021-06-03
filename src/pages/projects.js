@@ -64,8 +64,8 @@ export default function Projects() {
                 </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions href="https://www.youtube.com/watch?v=m_u6P5k0vP0">
-                <Button size="small" color="black">
+            <CardActions>
+                <Button size="small" color="black" href="https://www.youtube.com/watch?v=m_u6P5k0vP0">
                 Learn More
                 </Button>
             </CardActions>
