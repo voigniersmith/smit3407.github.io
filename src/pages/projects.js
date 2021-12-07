@@ -19,8 +19,8 @@ const useStyles = makeStyles({
 
 const onDownload = () => {
     const link = document.createElement("a");
-    link.download = `ppps_release`;
-    link.href = "../ppps_release";
+    link.download = `ppps_release.zip`;
+    link.href = "../../ppps_release.zip";
     link.click();
   };
 
