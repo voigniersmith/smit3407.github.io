@@ -6,6 +6,7 @@ import Memory from '../pictures/memory.jpg';
 import RaspberryPi from '../pictures/raspberry_pi.jpg';
 import Omega from '../pictures/omega.jpg';
 import Bash from '../pictures/bash_logo.jpg';
+import Pixels from '../pictures/pixel_pic.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -16,12 +17,43 @@ const useStyles = makeStyles({
   },
 });
 
+const onDownload = () => {
+    const link = document.createElement("a");
+    link.download = `ppps_release`;
+    link.href = "../ppps_release";
+    link.click();
+  };
+
 export default function Projects() {
   const classes = useStyles();
 
   return (
     <Container maxWidth='xs'>  
         <Card maxWidth='inherit'>
+        <CardActionArea>
+                <CardMedia
+                className={classes.media}
+                image={Pixels}
+                title="A basic scenario in the game"
+                />
+                <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                    Powder Pixel Physics Simulator
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                    Final Project for CS 535 - Intro to Computer Graphics. Meant
+                    to be a demonstration of a shader and GPU programming.
+                </Typography>
+                </CardContent>
+            </CardActionArea>
+            <CardActions>
+                <Button onClick={onDownload} size="small" color="black">
+                    Download
+                </Button>
+            </CardActions>
+          </Card>
+          <br/>
+          <Card maxWidth='inherit'>
             <CardActionArea>
                 <CardMedia
                 className={classes.media}
@@ -34,8 +66,8 @@ export default function Projects() {
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                     Assembled a command-line interpreter in C and C++ that
-                    combines behavior from common shells, including bash and csh, 
-                    implementing features such as pipes and wildcards 
+                    combines behavior from common shells, including bash and csh,
+                    implementing features such as pipes and wildcards
                 </Typography>
                 </CardContent>
             </CardActionArea>

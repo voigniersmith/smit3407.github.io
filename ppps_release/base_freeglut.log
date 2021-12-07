@@ -1,0 +1,28 @@
+﻿  gl_core_3_3.c
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glut.cpp
+  imgui_impl_opengl3.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  main.cpp
+main.cpp(158): warning C4305: '=': truncation from 'double' to 'float'
+main.cpp(258): warning C4267: '=': conversion from 'size_t' to 'GLsizei', possible loss of data
+main.cpp(337): warning C4244: '=': conversion from 'float' to 'GLint', possible loss of data
+main.cpp(338): warning C4244: '=': conversion from 'float' to 'GLint', possible loss of data
+main.cpp(619): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+main.cpp(620): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+main.cpp(563): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+  mesh.cpp
+mesh.cpp(119): warning C4267: '=': conversion from 'size_t' to 'GLsizei', possible loss of data
+mesh.cpp(152): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+mesh.cpp(155): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  util.cpp
+util.cpp(20): warning C4267: 'initializing': conversion from 'size_t' to 'GLint', possible loss of data
+  Generating code
+  All 2009 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  base_freeglut.vcxproj -> C:\Users\andre\Documents\CS 535\FinalProject\x64\Release\base_freeglut.exe
+  base_freeglut.vcxproj -> C:\Users\andre\Documents\CS 535\FinalProject\x64\Release\base_freeglut.pdb (Full PDB)
