@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Button, Typography } from '@material-ui/core';
 import MyPicture from '../pictures/IMG_1440.jpg';
 import Memory from '../pictures/memory.jpg';
-import RaspberryPi from '../pictures/raspberry_pi.jpg';
 import Omega from '../pictures/omega.jpg';
 import Bash from '../pictures/bash_logo.jpg';
 import Pixels from '../pictures/pixel_pic.jpg';
+import Butterfly from '../pictures/butterfly.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -54,7 +54,7 @@ export default function Projects() {
           </Card>
           <br/>
           <Card maxWidth='inherit'>
-            <CardActionArea>
+            <CardActionArea href="https://www.cs.purdue.edu/homes/grr/SystemsProgrammingBook/Book/Chapter5-WritingYourOwnShell.pdf">
                 <CardMedia
                 className={classes.media}
                 image={Bash}
@@ -72,14 +72,14 @@ export default function Projects() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="black">
+                <Button size="small" color="black" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">
                 Learn More
                 </Button>
             </CardActions>
           </Card>
           <br/>
           <Card maxWidth='inherit'>
-            <CardActionArea>
+            <CardActionArea href="https://docs.google.com/document/d/1sSeSvT-moXmOSITcWFRffmh0Ieaf204r8f43A8PKs-Y/edit?usp=sharing">
                 <CardMedia
                 className={classes.media}
                 image={Omega}
@@ -96,14 +96,14 @@ export default function Projects() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="black">
+                <Button size="small" color="black" href="https://www.youtube.com/watch?v=m_u6P5k0vP0">
                 Learn More
                 </Button>
             </CardActions>
           </Card>
           <br/>
           <Card maxWidth='inherit'>
-            <CardActionArea>
+            <CardActionArea href="https://www.cs.purdue.edu/homes/grr/SystemsProgrammingBook/Book/Chapter2-ReviewofPointersandMemoryAllocation.pdf">
                 <CardMedia
                 className={classes.media}
                 image={Memory}
@@ -120,39 +120,38 @@ export default function Projects() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="black">
+                <Button size="small" color="black" href="http://gee.cs.oswego.edu/dl/html/malloc.html">
                 Learn More
                 </Button>
             </CardActions>
           </Card>
           <br/>
           <Card maxWidth='inherit'>
-            <CardActionArea>
+            <CardActionArea href="https://drive.google.com/file/d/12zxO3UlrUImNdKPHySNK3ypuLqBEqUtI/view?usp=sharing">
                 <CardMedia
                 className={classes.media}
-                image={RaspberryPi}
+                image={Butterfly}
                 title="Check Unsplash.com for more free-to-use photos"
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                    Google Home and Raspberry Pi (In Progress)
+                    Creating an Automated Bug Detection Tool
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    This is a personal project to connect the voice control of the Google Home
-                    to a Raspberry Pi - hosted - Node server that will control LED strips in
-                    my room.   
+                    Learned how likely-invariants from call graphs, reminiscent to the automatic bug detection tool Coverity,
+                    are called together. The frequency of function calls led to automatic detection of software bugs.
                 </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="black">
+                <Button size="small" color="black" href="https://scan.coverity.com/about">
                 Learn More
                 </Button>
             </CardActions>
           </Card>
           <br/>
           <Card maxWidth='inherit'>
-            <CardActionArea>
+            <CardActionArea href="https://voigniersmith.com/">
                 <CardMedia
                 className={classes.media}
                 image={MyPicture}
@@ -170,8 +169,8 @@ export default function Projects() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="black">
-                Learn More
+                <Button size="small" color="black" href="https://github.com/mldangelo/personal-site">
+                Learn More from my Inspiration
                 </Button>
             </CardActions>
         </Card>

@@ -50,7 +50,7 @@ export default function Contact() {
                     <Button disableRipple style={{ maxWidth: '20%', minWidth: '20%' }} href="https://github.com/smit3407"><GitHubIcon /></Button>
                     <Button disableRipple style={{ maxWidth: '20%', minWidth: '20%' }} href="https://www.facebook.com/profile.php?id=100003999054326"><FacebookIcon /></Button>
                     <Button disableRipple style={{ maxWidth: '20%', minWidth: '20%' }} href="https://www.instagram.com/andrewnook4/"><InstagramIcon /></Button>
-                    <Button disableRipple style={{ maxWidth: '20%', minWidth: '20%' }} href="https://www.linkedin.com/in/andrew-smith-21892b1a1/"><LinkedInIcon /></Button>
+                    <Button disableRipple style={{ maxWidth: '20%', minWidth: '20%' }} href="https://www.linkedin.com/in/voigniersmith/"><LinkedInIcon /></Button>
                     <Button disableRipple style={{ maxWidth: '20%', minWidth: '20%' }} href="mailto:smit3407@purdue.edu"><MailOutlineIcon /></Button>
                 </CardContent>
             </Card>
